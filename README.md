@@ -1,5 +1,7 @@
 <div align="center">
-    
+
+<img src="https://raw.githubusercontent.com/junian/commons-media/refs/heads/master/svg/jekyll-logo-black.svg" style="height: 128px;" />
+
 # jekyll-jtdocs
 
 A modern, highly customizable, and responsive Jekyll theme for documentation with built-in search.
