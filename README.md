@@ -29,7 +29,7 @@ https://user-images.githubusercontent.com/85418632/211225192-7e5d1116-2f4f-4305-
 Create or edit a `_config.yml` file and add `remote_theme: junian/jekyll-jtdocs`.
 For example:
 
-```
+```yaml
 title: jekyll-jtdocs
 description: A Jekyll theme for documentation. Fork of just-the-docs
 remote_theme: junian/jekyll-jtdocs
