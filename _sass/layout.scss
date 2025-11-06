@@ -160,6 +160,13 @@
   height: 100%;
   padding: $gutter-spacing-sm;
   align-items: center;
+
+  & > svg {
+    width: $sp-4;
+    height: $sp-4;
+    vertical-align: text-bottom;
+    padding-left: 3px;
+  }
 }
 
 @include mq(md) {
