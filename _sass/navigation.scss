@@ -190,6 +190,13 @@
     height: 100%;
     padding: 0;
     margin: 0;
+
+    svg {
+      width: $sp-4;
+      height: $sp-4;
+      vertical-align: text-bottom;
+      padding-left: 3px;
+    }
   }
 
   @include mq(md) {
