@@ -20,6 +20,10 @@ url: "https://www.junian.dev/jekyll-jtdocs/" # the base hostname & protocol for 
 repository: junian/jekyll-jtdocs # for github-metadata
 remote_theme: junian/jekyll-jtdocs
 
+# If you're monetizing your docs with Google AdSense, set your publisher ID here.
+# This is only for Auto Ads. For manual placement, you need to edit the theme yourself.
+# google_adsense: ca-pub-123456789
+
 permalink: pretty
 
 defaults:
