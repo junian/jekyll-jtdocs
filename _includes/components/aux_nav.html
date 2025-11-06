@@ -8,7 +8,7 @@
           {% endif %}
         >
           {{ link.first }}
-          {% if site.aux_links_new_tab %}{% unless node.hide_icon %}<svg viewBox="0 0 24 24" aria-labelledby="svg-external-link-title"><use xlink:href="#svg-external-link"></use></svg>{% endunless %}{% endif %}
+          {% if site.aux_links_new_tab %}<svg viewBox="0 0 24 24" aria-labelledby="svg-external-link-title"><use xlink:href="#svg-external-link"></use></svg>{% endif %}
         </a>
       </li>
     {% endfor %}
