@@ -24,6 +24,17 @@ https://user-images.githubusercontent.com/85418632/211225192-7e5d1116-2f4f-4305-
 
 ## Installation
 
+### Use as Standard GitHub Pages
+
+Create or edit a `_config.yml` file and add `remote_theme: junian/jekyll-jtdocs`.
+For example:
+
+```
+title: jekyll-jtdocs
+description: A Jekyll theme for documentation. Fork of just-the-docs
+remote_theme: junian/jekyll-jtdocs
+```
+
 ### Use the template
 
 The [Just the Docs Template] provides the simplest, quickest, and easiest way to create a new website that uses the Just the Docs theme. To get started with creating a site, just click "[use the template]"!
