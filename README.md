@@ -35,6 +35,12 @@ description: A Jekyll theme for documentation. Fork of just-the-docs
 remote_theme: junian/jekyll-jtdocs
 ```
 
+For stability, use a certain version, such as:
+
+```yaml
+remote_theme: junian/jekyll-jtdocs@v0.10.2
+```
+
 ### Use the template
 
 The [Just the Docs Template] provides the simplest, quickest, and easiest way to create a new website that uses the Just the Docs theme. To get started with creating a site, just click "[use the template]"!
