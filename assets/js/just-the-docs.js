@@ -94,7 +94,11 @@ function disableHeadStyleSheets() {
 
 function initSearch() {
   var request = new XMLHttpRequest();
+  {%- if site.search.external_search_data %}
+  request.open('GET', '{{ site.search.external_search_data }}', true);
+  {%- else %}
   request.open('GET', '{{ "assets/js/search-data.json" | relative_url }}', true);
+  {%- endif %}
 
   request.onload = function(){
     if (request.status >= 200 && request.status < 400) {
