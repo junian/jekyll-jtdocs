@@ -12,5 +12,5 @@ search_exclude: true
 
 <script type="text/javascript">
   document.title = `${document.title} - ${window.location.pathname}`;
-  document.querySelector('span.page-not-found').textContent = `The page (${window.location.pathname}) you requested could not be found`;
+  document.querySelector('span.page-not-found').innerHTML = `The page <code>${window.location.pathname}</code> you requested could not be found`;
 </script>
