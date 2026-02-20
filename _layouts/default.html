@@ -32,6 +32,10 @@ layout: table_wrappers
             {% include components/disqus_comments.html %}
           {% endif %}
           
+          {% if site.commentbox.project_id %}
+            {% include components/commentbox_comments.html %}
+          {% endif %}
+          
           {% if page.has_toc != false %}
             {% include components/children_nav.html %}
           {% endif %}
