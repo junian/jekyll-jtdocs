@@ -38,7 +38,7 @@ remote_theme: junian/jekyll-jtdocs
 For stability, use a certain version, such as:
 
 ```yaml
-remote_theme: junian/jekyll-jtdocs@v0.10.2
+remote_theme: junian/jekyll-jtdocs@v0.12.0
 ```
 
 ### Use the template
@@ -107,8 +107,6 @@ Bug reports, proposals of new features, and pull requests are welcome on GitHub 
 ## Development
 
 To set up your environment to develop this theme: fork this repo, the run `bundle install` from the root directory.
-
-A modern [devcontainer configuration](https://code.visualstudio.com/docs/remote/containers) for VSCode is included.
 
 Your theme is set up just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
 
