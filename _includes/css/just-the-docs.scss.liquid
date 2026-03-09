@@ -4,7 +4,7 @@ $logo: "{{ site.logo | relative_url }}";
 @import "./support/support";
 @import "./custom/setup";
 @import "./color_schemes/light";
-@import "./vendor/pygments-styles/{{ site.syntax_highlighting_theme | default: 'a11y-light' | escape }}";
+@import "./vendor/pygments-styles/{{ site.syntax_highlighting_style | default: 'accessible-pygments/github-light' | escape }}";
 {% unless include.color_scheme == "light" %}
 @import "./color_schemes/{{ include.color_scheme }}";
 {% endunless %}

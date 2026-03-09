@@ -169,7 +169,7 @@ gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into t
 color_scheme: nil
 
 # Color theme for coding syntax highlighter
-syntax_highlighting_theme: xcode
+syntax_highlighting_style: accessible-pygments/github-light
 
 # When commented out, callouts_level defaults to quiet for the light scheme, and loud for dark
 # callouts_level: quiet # or loud
