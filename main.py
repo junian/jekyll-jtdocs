@@ -1,5 +1,10 @@
 from pygments.formatters import HtmlFormatter
 from pygments.styles import get_all_styles
+import os
+
+# Ensure output directory exists
+output_dir = "_sass/vendor/pygments-styles"
+os.makedirs(output_dir, exist_ok=True)
 
 # WCAG 2.1 - AAA compliant themes (accessible-pygments)
 aaa_themes = [
@@ -45,10 +50,11 @@ for style in unique_themes:
     try:
         formatter = HtmlFormatter(style=style)
         css = formatter.get_style_defs(".highlight")
-        with open(f"_sass/vendor/accessible-pygments/{style}.scss", "w") as f:
+        with open(f"{output_dir}/{style}.scss", "w") as f:
             f.write(css)
         print(f"✓ Generated: {style}.scss")
     except Exception as e:
         print(f"✗ Failed to generate {style}.scss: {e}")
 
 print(f"\nTotal themes generated: {len(unique_themes)}")
+print(f"Output directory: {output_dir}")
