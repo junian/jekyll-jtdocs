@@ -17,7 +17,10 @@
     "lint:formatting": "prettier --check '**/*.{scss,js,json}'",
     "format": "prettier --write '**/*.{scss,js,json}'",
     "test": "npm run lint",
-    "install": "bundle install",
+    "pygments": "uv run main.py",
+    "install": "npm-run-all uv:sync bundle:install",
+    "uv:sync": "uv sync",
+    "bundle:install": "bundle install",
     "serve": "bundle exec jekyll serve"
   },
   "stylelint": {
