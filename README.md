@@ -12,7 +12,7 @@ Fork of [just-the-docs](https://just-the-docs.com).
 
 </div>
 
-<p align="center">A video walkthrough of various Just the Docs features</p>
+<p align="center">A video walkthrough of various jekyll-jtdocs features</p>
 
 https://user-images.githubusercontent.com/85418632/211225192-7e5d1116-2f4f-4305-bb9b-437fe47df071.mp4
 

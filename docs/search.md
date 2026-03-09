@@ -14,7 +14,7 @@ nav_order: 7
 
 ---
 
-Just the Docs uses [lunr.js](https://lunrjs.com) to add a client-side search interface powered by a JSON index that Jekyll generates.
+jekyll-jtdocs uses [lunr.js](https://lunrjs.com) to add a client-side search interface powered by a JSON index that Jekyll generates.
 All search results are shown in an auto-complete style interface (there is no search results page).
 By default, all generated HTML pages are indexed using the following data points:
 
@@ -95,7 +95,7 @@ search.button: true
 
 ### Focus search bar with a keyboard shortcut
 
-Just the Docs supports focusing the search bar input with a keyboard shortcut. After setting the `search.focus_shortcut_key` config item key, users who press <kbd>Ctrl</kbd> + `search.focus_shortcut_key` (or on macOS, <kbd>Command</kbd> + `search.focus_shortcut_key`) will focus the search bar.
+jekyll-jtdocs supports focusing the search bar input with a keyboard shortcut. After setting the `search.focus_shortcut_key` config item key, users who press <kbd>Ctrl</kbd> + `search.focus_shortcut_key` (or on macOS, <kbd>Command</kbd> + `search.focus_shortcut_key`) will focus the search bar.
 
 Note that this feature is **disabled by default**. `search.focus_shortcut_key` should be a [valid value from `KeyboardEvent.key`](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key); this involves all ASCII alphanumeric values, as well as modifier keys.
 
@@ -127,7 +127,7 @@ search_exclude: true
 
 ## Generate search index when used as a gem
 
-If you use Just the Docs as a remote theme, you do not need the following steps.
+If you use jekyll-jtdocs as a remote theme, you do not need the following steps.
 
 If you use the theme as a gem, you must initialize the search by running this `rake` command that comes with `just-the-docs`:
 
@@ -152,7 +152,7 @@ By default, the search feature indexes a page's `.content`, `.title`, and *some*
 {: .warning }
 > Customizing search indices is an advanced feature that requires Javascript and Liquid knowledge.
 
-1. When Just the Docs is a local or gem theme, ensure `assets/js/zzzz-search-data.json` is up-to-date with [Generate search index when used as a gem](#generate-search-index-when-used-as-a-gem).
+1. When jekyll-jtdocs is a local or gem theme, ensure `assets/js/zzzz-search-data.json` is up-to-date with [Generate search index when used as a gem](#generate-search-index-when-used-as-a-gem).
 2. Add a new file named `_includes/lunr/custom-data.json`. Insert custom Liquid code that reads your data (e.g. the page object at `include.page`) then generates custom Javascript fields that hold the custom data you want to index. Verify these fields in the generated `assets/js/search-data.json`.
 3. Add a new file named `_includes/lunr/custom-index.js`. Insert custom Javascript code that reads your custom Javascript fields and inserts them into the search index. You may want to inspect `assets/js/just-the-docs.js` to better understand the code.
 

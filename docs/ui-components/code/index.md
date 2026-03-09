@@ -68,22 +68,22 @@ To demonstrate front end code, sometimes it's useful to show a rendered example 
 
 <div class="code-example" markdown="1">
 
-[Link button](https://just-the-docs.com){: .btn }
+[Link button](https://www.junian.dev/jekyll-jtdocs/){: .btn }
 
 </div>
 ```markdown
-[Link button](https://just-the-docs.com){: .btn }
+[Link button](https://www.junian.dev/jekyll-jtdocs/){: .btn }
 ```
 
 </div>
 {% highlight markdown %}
 <div class="code-example" markdown="1">
 
-[Link button](https://just-the-docs.com){: .btn }
+[Link button](https://www.junian.dev/jekyll-jtdocs/){: .btn }
 
 </div>
 ```markdown
-[Link button](https://just-the-docs.com){: .btn }
+[Link button](https://www.junian.dev/jekyll-jtdocs/){: .btn }
 ```
 {% endhighlight %}
 
@@ -170,7 +170,7 @@ mermaid:
 For mermaid versions `>=10`, this file is imported directly as an ESM module (rather than as a plain `<script>` tag); users should use the `mermaid.esm.min.mjs` file. In contrast, for mermaid versions `<10`, this file is loaded as a script tag; it should be a standalone CJS file (i.e. `mermaid.min.js`).
 
 {: .warning }
-Mermaid versions `10.0` - `10.1` (and possibly, future releases) still encode relative imports in `mermaid.esm.min.mjs`. Local users must copy *all* of the contents of the `dist` folder to the specified path (preserving the relative location of the files). Just the Docs is actively monitoring mermaid releases; an upstream fix is planned.
+Mermaid versions `10.0` - `10.1` (and possibly, future releases) still encode relative imports in `mermaid.esm.min.mjs`. Local users must copy *all* of the contents of the `dist` folder to the specified path (preserving the relative location of the files). jekyll-jtdocs is actively monitoring mermaid releases; an upstream fix is planned.
 
 ### Using mermaid with AsciiDoc
 
@@ -193,7 +193,7 @@ graph TD;
 
 Alternatively, community member [@flyx](https://github.com/flyx) has contributed a Ruby extension that does not require extra markup. The extension is available [as a GitHub Gist](https://gist.github.com/flyx/9fff080cf4edc95d495bc661a002232c). Thank you to [@flyx](https://github.com/flyx)!
 
-The [asciidoctor-diagram](https://docs.asciidoctor.org/diagram-extension/latest/) extension which also supports mermaid is not recommended for use with Just the Docs, since it requires separate configuration e.g. for theming, and is known to not be trivial to set up.
+The [asciidoctor-diagram](https://docs.asciidoctor.org/diagram-extension/latest/) extension which also supports mermaid is not recommended for use with jekyll-jtdocs, since it requires separate configuration e.g. for theming, and is known to not be trivial to set up.
 
 ## Copy button
 {: .d-inline-block }
