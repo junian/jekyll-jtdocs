@@ -52,7 +52,7 @@ end
 {% endhighlight %}{% endraw %}
 ```
 
-If this is directly placed within a file processed by Jekyll (via Just the Docs, with HTML compression enabled), the following markup will be generated:
+If this is directly placed within a file processed by Jekyll (via jekyll-jtdocs, with HTML compression enabled), the following markup will be generated:
 
 ```html
 <figure class="highlight">><code class="language-ruby" data-lang="ruby"><div class="table-wrapper"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1

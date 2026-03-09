@@ -16,7 +16,7 @@ vendor/
 # But don't ignore _sass/vendor (theme assets)
 !_sass/vendor/
 
-# These next files are used by Just the Docs developers. They are not necessary for end users of the theme, only developers.
+# These next files are used by jekyll-jtdocs developers. They are not necessary for end users of the theme, only developers.
 
 # We use Stylelint and Prettier, JavaScript tools, to lint and format our own code.
 # We use Node.js as our runtime, so we ignore node_modules

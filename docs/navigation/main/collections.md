@@ -7,7 +7,7 @@ nav_order: 5
 # Collections
 
 By default, the navigation includes only [normal pages](https://jekyllrb.com/docs/pages/).
-However, you can configure Just the Docs to include also pages from [Jekyll collections](https://jekyllrb.com/docs/collections/).
+However, you can configure jekyll-jtdocs to include also pages from [Jekyll collections](https://jekyllrb.com/docs/collections/).
 
 {: .note }
 > You store collection pages in directories that start with an underscore (`_`), e.g., `_tests`. You won't see your `tests` collection pages in the navigation if you store them in a `tests` directory![^1]

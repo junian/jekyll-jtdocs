@@ -6,7 +6,7 @@ nav_order: 1
 
 # Main Navigation
 
-The main navigation for your Just the Docs site is at the left side of the page on large screens, and at the top (behind a tap) on small screens.
+The main navigation for your jekyll-jtdocs site is at the left side of the page on large screens, and at the top (behind a tap) on small screens.
 
 You need to specify the `title` of each page in its front matter. Page titles are independent of file names and directory structure. The navigation uses the title of the page as an anchor for links to the page.
 
@@ -29,7 +29,7 @@ For the construction of the navigation display to work (and to avoid potential c
 >
 > If *all* the pages of your site have different titles, you need only to specify the `title` of each page, and the `parent` title of each lower-level page.[^1]
 
-[^1]: Previous versions of Just the Docs restricted the navigation to three levels. You also needed to specify `has_children: true` on all parent pages, and a `grand_parent` title on all grandchild pages. The `has_children` parameter is now redundant, and the `grand_parent` parameter can usually be omitted.
+[^1]: Previous versions of jekyll-jtdocs restricted the navigation to three levels. You also needed to specify `has_children: true` on all parent pages, and a `grand_parent` title on all grandchild pages. The `has_children` parameter is now redundant, and the `grand_parent` parameter can usually be omitted.
 
 If your site has pages with the same title, you need to avoid confusion when you reference that title as `parent` on other pages. When the pages with the same title have different `parent` pages, you can distinguish between them using the `grand_parent` parameter.
 

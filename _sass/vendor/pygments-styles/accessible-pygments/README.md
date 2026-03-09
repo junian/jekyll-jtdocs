@@ -1,6 +1,6 @@
 # accessible-pygments
 
-[`accessible-pygments`](https://github.com/Quansight-Labs/accessible-pygments/tree/main) is a project that implements accessible syntax highlighting themes for pygments. Just the Docs packages two (S)CSS versions of their themes: github-light and github-dark.
+[`accessible-pygments`](https://github.com/Quansight-Labs/accessible-pygments/tree/main) is a project that implements accessible syntax highlighting themes for pygments. jekyll-jtdocs packages two (S)CSS versions of their themes: github-light and github-dark.
 
 The project is released under the BSD 3-Clause, which is both enclosed in this directory and available in [the original accessible-pygments repository](https://github.com/Quansight-Labs/accessible-pygments/blob/main/LICENSE).
 

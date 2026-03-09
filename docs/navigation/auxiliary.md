@@ -11,10 +11,10 @@ You can add a list of auxiliary links to your site, shown at the top right on al
 ## Example Auxiliary Link
 {: .text-delta }
 
-This website has an auxiliary link: "Just the Docs on GitHub". It is rendered with the following code:
+This website has an auxiliary link: "jekyll-jtdocs on GitHub". It is rendered with the following code:
 
 ```yaml
 aux_links:
-  Just the Docs on GitHub:
-    - https://github.com/just-the-docs/just-the-docs
+  jekyll-jtdocs on GitHub:
+    - https://github.com/junian/jekyll-jtdocs
 ```

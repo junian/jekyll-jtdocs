@@ -6,7 +6,7 @@ nav_order: 4.5
 
 # Layout
 
-You specify the layout for a page in its [front matter]. Just the Docs has a `default` layout with a sidebar, used for almost all pages in the theme docs, and a `minimal` layout that omits the sidebar.
+You specify the layout for a page in its [front matter]. jekyll-jtdocs has a `default` layout with a sidebar, used for almost all pages in the theme docs, and a `minimal` layout that omits the sidebar.
 {: .fs-6 .fw-300 }
 
 ## The layout concept
@@ -19,7 +19,7 @@ You can use [Jekyll's front matter defaults] to specify the same layout for many
 
 This page uses the default layout. This site configures `layout: default` as a [front matter default](https://jekyllrb.com/docs/configuration/front-matter-defaults/) value for all pages in the `docs` directory.
 
-The default layout of Just the Docs is a *responsive* layout: on medium and larger width displays, it displays a sidebar, including a navigation panel; on smaller width displays, the sidebar is automatically hidden under a button.
+The default layout of jekyll-jtdocs is a *responsive* layout: on medium and larger width displays, it displays a sidebar, including a navigation panel; on smaller width displays, the sidebar is automatically hidden under a button.
 
 All pages except top-level pages automatically have a list of  so-called *breadcrumbs*: links to their parent pages and any higher-level ancestors. They show the breadcrumbs above the main content of the page.
 
@@ -44,7 +44,7 @@ nav_enabled: true
 
 ## Other layouts
 
-Just the Docs has further layouts: `about`, `home`, `page`, and `post`. Currently, they are all based on the `default` layout. See the [Jekyll docs about inheritance] for how to customize them.
+jekyll-jtdocs has further layouts: `about`, `home`, `page`, and `post`. Currently, they are all based on the `default` layout. See the [Jekyll docs about inheritance] for how to customize them.
 
 [front matter]: https://jekyllrb.com/docs/front-matter/ "Jekyll docs about front matter"
 [Jekyll docs page about layouts]: https://jekyllrb.com/docs/layouts/ "Jekyll docs about layouts"
