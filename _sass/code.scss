@@ -72,7 +72,7 @@ div.listingblock > div.content,
 figure.highlight {
   margin-top: 0;
   margin-bottom: $sp-3;
-  background-color: $code-background-color;
+  // background-color: $code-background-color;
   border-radius: $border-radius;
   box-shadow: none;
   -webkit-overflow-scrolling: touch;
@@ -233,7 +233,7 @@ code.language-mermaid {
 // Override OneDarkJekyll Colors for Code Blocks
 .highlight,
 pre.highlight {
-  background: $code-background-color; // Code Background
+  // background: $code-background-color; // Code Background
   // For Backwards Compatibility Before $code-linenumber-color was added
   @if variable-exists(code-linenumber-color) {
     color: $code-linenumber-color; // Code Line Numbers
@@ -244,7 +244,7 @@ pre.highlight {
 
 // Override OneDarkJekyll Colors for Code Blocks
 .highlight pre {
-  background: $code-background-color; // Code Background
+  // background: $code-background-color; // Code Background
 }
 
 // {% endraw %}
