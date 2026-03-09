@@ -236,9 +236,9 @@ pre.highlight {
   // background: $code-background-color; // Code Background
   // For Backwards Compatibility Before $code-linenumber-color was added
   @if variable-exists(code-linenumber-color) {
-    color: $code-linenumber-color; // Code Line Numbers
+    // color: $code-linenumber-color; // Code Line Numbers
   } @else {
-    color: $body-text-color; // Code Line Numbers
+    // color: $body-text-color; // Code Line Numbers
   }
 }
 
