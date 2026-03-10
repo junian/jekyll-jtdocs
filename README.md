@@ -43,9 +43,9 @@ remote_theme: junian/jekyll-jtdocs@v0.12.0
 
 ### Use the template
 
-The [Just the Docs Template] provides the simplest, quickest, and easiest way to create a new website that uses the Just the Docs theme. To get started with creating a site, just click "[use the template]"!
+The [jekyll-jtdocs Template] provides the simplest, quickest, and easiest way to create a new website that uses the jekyll-jtdocs theme. To get started with creating a site, just click "[use the template]"!
 
-Note: To use the theme, you do ***not*** need to clone or fork the [Just the Docs repo]! You should do that only if you intend to browse the theme docs locally, contribute to the development of the theme, or develop a new theme based on Just the Docs.
+Note: To use the theme, you do ***not*** need to clone or fork the [jekyll-jtdocs repo]! You should do that only if you intend to browse the theme docs locally, contribute to the development of the theme, or develop a new theme based on jekyll-jtdocs.
 
 You can easily set the site created by the template to be published on [GitHub Pages] – the [template README] file explains how to do that, along with other details.
 
@@ -82,17 +82,17 @@ $ bundle
 
 ## Usage
 
-[View the documentation][Just the Docs] for usage information.
+[View the documentation][jekyll-jtdocs] for usage information.
 
 ## Contributing
 
-Bug reports, proposals of new features, and pull requests are welcome on GitHub at https://github.com/just-the-docs/just-the-docs. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports, proposals of new features, and pull requests are welcome on GitHub at https://github.com/junian/jekyll-jtdocs. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ### Submitting code changes:
 
-- Submit an [Issue](https://github.com/just-the-docs/just-the-docs/issues) that motivates the changes, using the appropriate template
+- Submit an [Issue](https://github.com/junian/jekyll-jtdocs/issues) that motivates the changes, using the appropriate template
 - Discuss the proposed changes with other users and the maintainers
-- Open a [Pull Request](https://github.com/just-the-docs/just-the-docs/pulls)
+- Open a [Pull Request](https://github.com/junian/jekyll-jtdocs/pulls)
 - Ensure all CI tests pass
 - Provide instructions to check the effect of the changes
 - Await code review
@@ -123,10 +123,10 @@ The theme is available as open source under the terms of the [MIT License](http:
 [^2]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
 
 [Jekyll]: https://jekyllrb.com
-[Just the Docs Template]: https://just-the-docs.github.io/just-the-docs-template/
-[Just the Docs]: https://just-the-docs.com
-[Just the Docs repo]: https://github.com/just-the-docs/just-the-docs
+[jekyll-jtdocs Template]: https://pages-templates.github.io/jekyll-jtdocs/
+[jekyll-jtdocs]: https://www.junian.dev/jekyll-jtdocs/
+[jekyll-jtdocs repo]: https://github.com/junian/jekyll-jtdocs
 [GitHub Pages]: https://pages.github.com/
-[Template README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
+[Template README]: https://github.com/pages-templates/jekyll-jtdocs/blob/main/README.md
 [GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use the template]: https://github.com/just-the-docs/just-the-docs-template/generate
+[use the template]: https://github.com/pages-templates/jekyll-jtdocs/generate
