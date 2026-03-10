@@ -20,24 +20,6 @@ url: "https://www.junian.dev/jekyll-jtdocs/" # the base hostname & protocol for 
 repository: junian/jekyll-jtdocs # for github-metadata
 remote_theme: junian/jekyll-jtdocs
 
-# { plugins for GitHub Pages
-
-plugins:
-  - jekyll-redirect-from
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-commonmark-ghpages
-
-whitelist:
-  - jekyll-redirect-from
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-commonmark-ghpages
-
-# plugins for GitHub Pages }
-
 # If you're monetizing your docs with Google AdSense, set your publisher ID here.
 # This is only for Auto Ads. For manual placement, you need to edit the theme yourself.
 # google_adsense: ca-pub-123456789
@@ -81,6 +63,8 @@ exclude:
   - spec/
   - tmp
   - .rspec
+
+# <!-- jekyll-jtdocs start />
 
 # Set a path/url to a logo that will be displayed instead of the title
 #logo: "/assets/images/just-the-docs.png"
@@ -256,3 +240,23 @@ compress_html:
 sass:
   quiet_deps: true # https://github.com/just-the-docs/just-the-docs/issues/1541
   silence_deprecations: ['import'] # https://github.com/just-the-docs/just-the-docs/issues/1607
+
+# <!-- jekyll-jtdocs end />
+
+# <!-- GitHub Pages plugins />
+
+plugins:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-commonmark-ghpages
+
+whitelist:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-commonmark-ghpages
+
+# <!-- GitHub Pages plugins />
