@@ -210,6 +210,9 @@ callouts:
 # ga_tracking: UA-2709176-10,G-5FG1HLH3XQ
 # ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
 
+# Microsoft Clarity Tracking (optional)
+# microsoft_clarity: abcdefg123
+
 # Disqus Comments
 # disqus:
   # Leave shortname blank to disable comments site-wide.
