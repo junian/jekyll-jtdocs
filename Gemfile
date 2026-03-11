@@ -8,6 +8,9 @@ gem "jekyll-github-metadata", ">= 2.15"
 
 gem "jekyll-include-cache", group: :jekyll_plugins
 gem "jekyll-sitemap", group: :jekyll_plugins
+gem "jekyll-redirect-from", group: :jekyll_plugins
+gem "jekyll-feed", group: :jekyll_plugins
+gem "jekyll-commonmark-ghpages", group: :jekyll_plugins
 
 group :development, :test do
   gem "html-proofer", "~> 5.2"
@@ -25,9 +28,3 @@ group :development, :test do
   gem 'capybara-screenshot'
   gem 'selenium-webdriver'
 end
-
-gem "jekyll-redirect-from", "~> 0.16.0"
-
-gem "jekyll-feed", "~> 0.17.0"
-
-gem "jekyll-commonmark-ghpages", "~> 0.1.0"

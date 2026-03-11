@@ -265,12 +265,12 @@ DEPENDENCIES
   capybara-screenshot
   csv
   html-proofer (~> 5.2)
-  jekyll-commonmark-ghpages (~> 0.1.0)
-  jekyll-feed (~> 0.17.0)
+  jekyll-commonmark-ghpages
+  jekyll-feed
   jekyll-github-metadata (>= 2.15)
   jekyll-include-cache
   jekyll-jtdocs!
-  jekyll-redirect-from (~> 0.16.0)
+  jekyll-redirect-from
   jekyll-sitemap
   rack
   rackup
