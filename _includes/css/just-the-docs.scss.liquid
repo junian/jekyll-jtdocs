@@ -1,11 +1,10 @@
 {% if site.logo %}
 $logo: "{{ site.logo | relative_url }}";
 {% endif %}
-$default_syntax_highlighting_style: 'accessible-pygments/github-light';
 @import "./support/support";
 @import "./custom/setup";
 @import "./color_schemes/light";
-@import "./vendor/pygments-styles/{{ site.syntax_highlighting_style | default: default_syntax_highlighting_style | escape }}";
+@import "./vendor/pygments-styles/{{ site.syntax_highlighting_style | default: 'default' | escape }}";
 {% unless include.color_scheme == "light" %}
 @import "./color_schemes/{{ include.color_scheme }}";
 {% if site.syntax_highlighting_style_alt %}

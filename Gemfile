@@ -25,3 +25,9 @@ group :development, :test do
   gem 'capybara-screenshot'
   gem 'selenium-webdriver'
 end
+
+gem "jekyll-redirect-from", "~> 0.16.0"
+
+gem "jekyll-feed", "~> 0.17.0"
+
+gem "jekyll-commonmark-ghpages", "~> 0.1.0"
