@@ -112,7 +112,7 @@ figure.highlight {
   // the button can be seen by doing a simple hover in the code, there is no need to go over the location of the button
   &:hover {
     > button {
-      cursor: copy;
+      cursor: pointer;
       opacity: 1;
     }
   }
