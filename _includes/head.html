@@ -21,12 +21,12 @@
   {% if site.enforce_canonical_domain %}
     <script>
       (function() {
-        // We strip the protocol (https://) to get just the hostname for comparison
+        /* We strip the protocol (https://) to get just the hostname for comparison */
         var canonicalHostname = "{{ site.url | replace: 'http://', '' | replace: 'https://', '' }}";
         var currentHostname = window.location.hostname;
     
-        // 1. Don't redirect if we are already on the right domain
-        // 2. Don't redirect on local development (localhost/127.0.0.1)
+        /* 1. Don't redirect if we are already on the right domain */
+        /* 2. Don't redirect on local development (localhost/127.0.0.1) */
         var isLocal = currentHostname === "localhost" || currentHostname === "127.0.0.1";
         
         if (currentHostname !== canonicalHostname && !isLocal) {
