@@ -15,10 +15,11 @@
 # in the templates via {{ site.myvariable }}.
 title: jekyll-jtdocs
 description: A Jekyll theme for documentation. Fork of just-the-docs
-# baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.junian.dev/jekyll-jtdocs/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.junian.dev/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/jekyll-jtdocs" # the subpath of your site, e.g. /blog
 repository: junian/jekyll-jtdocs # for github-metadata
 remote_theme: junian/jekyll-jtdocs
+enforce_canonical_domain: true
 
 # If you're monetizing your docs with Google AdSense, set your publisher ID here.
 # This is only for Auto Ads. For manual placement, you need to edit the theme yourself.
