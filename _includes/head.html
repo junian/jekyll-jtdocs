@@ -17,7 +17,27 @@
   <link rel="stylesheet" href="{{ '/assets/css/just-the-docs-default.css?v=' | append: site.github.build_revision | relative_url }}">
 
   <link rel="stylesheet" href="{{ '/assets/css/just-the-docs-head-nav.css?v=' | append: site.github.build_revision | relative_url }}" id="jtd-head-nav-stylesheet">
-
+  
+  {% if site.enforce_canonical_domain %}
+    <script>
+      (function() {
+        // We strip the protocol (https://) to get just the hostname for comparison
+        var canonicalHostname = "{{ site.url | replace: 'http://', '' | replace: 'https://', '' }}";
+        var currentHostname = window.location.hostname;
+    
+        // 1. Don't redirect if we are already on the right domain
+        // 2. Don't redirect on local development (localhost/127.0.0.1)
+        var isLocal = currentHostname === "localhost" || currentHostname === "127.0.0.1";
+        
+        if (currentHostname !== canonicalHostname && !isLocal) {
+          window.location.replace(
+            "{{ site.url }}" + window.location.pathname + window.location.search
+          );
+        }
+      })();
+    </script>
+  {% endif %}
+  
   <style id="jtd-nav-activation">
   {% include css/activation.scss.liquid %}
   </style>
@@ -61,7 +81,7 @@
 
   {% include_cached favicon.html %}
 
-  {% seo %}
+  {% seo canonical=false %}
 
   {% include head_custom.html %}
 
