@@ -19,35 +19,28 @@
   <link rel="stylesheet" href="{{ '/assets/css/just-the-docs-head-nav.css?v=' | append: site.github.build_revision | relative_url }}" id="jtd-head-nav-stylesheet">
   
   {% if site.enforce_canonical_domain %}
-    <script>
-      (function() {
-        /* 1. Liquid: Clean the config URL to get a pure hostname */
-        {% assign canonical = site.url | replace: 'http://', '' | replace: 'https://', '' %}
-        {% assign last_char = canonical | slice: -1 %}
-        {% if last_char == '/' %}{% assign canonical = canonical | slice: 0, -1 %}{% endif %}
-        
-        var canonicalHostname = "{{ canonical }}";
-        var currentHostname = window.location.hostname;
-    
-        /* 2. Determine if the current environment is a local development server */
-        var isLocal = currentHostname === "localhost" || 
-                      currentHostname === "127.0.0.1" || 
-                      currentHostname.includes("192.168.");
-        
-        /* 3. Execute redirect if the hostname does not match and it is not local */
-        if (currentHostname !== canonicalHostname && !isLocal) {
-          /* Prepare the base URL by stripping any trailing slash from the site.url string */
-          var targetBase = "{{ site.url }}";
-          if (targetBase.substring(targetBase.length - 1) === '/') {
-              targetBase = targetBase.substring(0, targetBase.length - 1);
-          }
-          
-          window.location.replace(
-            targetBase + window.location.pathname + window.location.search
-          );
-        }
-      })();
-    </script>
+  <script>
+    (function() {
+      /* 1. Use the browser's URL API to parse the config URL */
+      var canonicalURL = new URL("{{ site.url }}");
+      var canonicalHostname = canonicalURL.hostname;
+      var currentHostname = window.location.hostname;
+  
+      /* 2. Identify local development environments */
+      var isLocal = currentHostname === "localhost" || 
+                    currentHostname === "127.0.0.1" || 
+                    currentHostname.indexOf("192.168.") !== -1;
+      
+      /* 3. Redirect if hostnames mismatch and we aren't local */
+      if (currentHostname !== canonicalHostname && !isLocal) {
+        /* We use the origin (protocol + domain) and append path + search */
+        /* canonicalURL.origin handles the trailing slash issue automatically */
+        window.location.replace(
+          canonicalURL.origin + window.location.pathname + window.location.search
+        );
+      }
+    })();
+  </script>
   {% endif %}
   
   <style id="jtd-nav-activation">
