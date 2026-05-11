@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: jekyll-jtdocs
 description: A Jekyll theme for documentation. Fork of just-the-docs
-url: "https://www.junian.dev/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.junian.dev" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "/jekyll-jtdocs" # the subpath of your site, e.g. /blog
 repository: junian/jekyll-jtdocs # for github-metadata
 remote_theme: junian/jekyll-jtdocs
