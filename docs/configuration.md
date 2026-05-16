@@ -86,7 +86,7 @@ mermaid:
 
 Provide a `path` instead of a `version` key to load the mermaid library from a local file.
 
-See [the Code documentation]({% link docs/ui-components/code/index.md %}#mermaid-diagram-code-blocks) for more configuration options and information.
+See [the Code documentation]({{ site.baseurl }}{% link docs/ui-components/code/index.md %}#mermaid-diagram-code-blocks) for more configuration options and information.
 
 ## Aux links
 
@@ -125,7 +125,7 @@ New (v0.4.0)
 {: .label .label-green }
 
 External links can be added to the navigation through the `nav_external_links` option.
-See [Navigation Structure]({% link docs/navigation/main/external.md %}) for more details.
+See [Navigation Structure]({{ site.baseurl }}{% link docs/navigation/main/external.md %}) for more details.
 
 ## Footer content
 
@@ -181,7 +181,7 @@ jtd.addEvent(toggleDarkMode, 'click', function(){
 });
 </script>
 
-See [Customization]({% link docs/customization.md %}) for more information.
+See [Customization]({{ site.baseurl }}{% link docs/customization.md %}) for more information.
 
 ## Callouts
 {: .d-inline-block }
@@ -220,7 +220,7 @@ You can also adjust the overall level of callouts. Both color schemes use `300` 
 - `quiet` (the default when using the `light` or custom color schemes) uses `-000` as the outline
 - `loud` (the default when using the `dark` color scheme) uses `-300` as the outline
 
-See [Callouts]({% link docs/ui-components/callouts.md %}) for more information. The colors used in the theme are further described in [Color Utilities]({% link docs/utilities/color.md %}).
+See [Callouts]({{ site.baseurl }}{% link docs/ui-components/callouts.md %}) for more information. The colors used in the theme are further described in [Color Utilities]({{ site.baseurl }}{% link docs/utilities/color.md %}).
 
 ## Google Analytics
 
